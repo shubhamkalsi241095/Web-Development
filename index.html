@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- title and meta -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<meta name="description" content="A simple slide down menu using jQuery and CSS" />
+	<title>Slide Down Menu With jQuery</title>
+	<!-- css -->
+	<link rel="stylesheet" href="css/base.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<!-- js -->
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/dropDown.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/calculator.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="top-bar">
+			<div class="content clearfix"></div>
+		</div>
+		<header>
+			<div id="title" class="content">
+				<h1>Slide Down Menu</h1>
+				<h2>This is a simple slide down navigation menu using jQuery and CSS</h2>
+			</div>
+		</header>
+		<nav>
+			<ul class="content clearfix">
+				<li class="calender"><a href="#nav1">Calender</a>
+				</li>
+				<li class="dropdown"> <a href="#">Calculator</a>
+					<ul class="sub-menu">
+						<li class="sum"><a href="#sum">Sum</a>
+						</li>
+						<li class="sub"><a href="#sub">Sub</a>
+						</li>
+						<li class="multiply"><a href="#multiply">Multiply</a>
+						</li>
+						<li class="dropdown"> <a href="#">convertor</a>
+							<ul class="sub-menu">
+								<li class="inch_cm"><a href="#">inch to cm</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown"> <a href="#">Contact us</a>
+					<ul class="sub-menu">
+						<li><a href="Aboutus.html">About us</a>
+						</li>
+						<li><a href="mailto:shubham.kalsi@mail.mcgill.ca">Email us</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+		<div id="main">
+			<div class="content">
+				<div class="calender2"></div>
+				<form>
+					<!--addition-->
+					<div class="hello_sum" style="display: none;">
+						<br>Number1
+						<input type="text" id="number1" placeholder="number">
+						<br>Number2
+						<input type="text" id="number2" placeholder="number">
+						<br>
+						<button type="button" class="sum_button">+</button>
+						<br>Result
+						<input type="text" id="result">
+						<br>
+					</div>
+					<!--Subtraction-->
+					<div class="hello_sub" style="display: none;">
+						<br>Number1
+						<input type="text" id="number_1" placeholder="number">
+						<br>Number2
+						<input type="text" id="number_2" placeholder="number">
+						<br>
+						<button type="button" class="sub_button">-</button>
+						<br>Result
+						<input type="text" id="result_1">
+						<br>
+					</div>
+					<!--multiplication-->
+					<div class="hello_mul" style="display: none;">
+						<br>Number1
+						<input type="text" id="number_3" placeholder="number">
+						<br>Number2
+						<input type="text" id="number_4" placeholder="number">
+						<br>
+						<button type="button" class="mul_button">*</button>
+						<br>Result
+						<input type="text" id="result_2">
+						<br>
+					</div>
+					<!--conversion-->
+					<div class="inch_centimeter" style="display: none;">
+						<br>Number1
+						<input type="text" id="number_5" placeholder="inch">
+						<br>
+						<button type="button" class="con_button">to</button>
+						<br>Number2
+						<input type="text" id="number_6" placeholder="centimeters">
+						<br>
+						<br>
+					</div>
+				</form>
+				<!---->
+			</div>
+		</div>
+		<footer></footer>
+	</div>
+</body>
+
+</html>
